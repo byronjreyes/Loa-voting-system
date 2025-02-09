@@ -1,0 +1,17 @@
+   Dim formattedRemainingTime As String = ""
+
+   If remainingTime.TotalSeconds > 0 Then
+       ' If remaining time is greater than 0, update labels
+       If remainingTime.Days > 0 Then
+           ' Determine whether to use singular or plural form for "day"
+           Dim dayLabel As String = If(remainingTime.Days = 1, "day", "days")
+
+           ' If there are remaining days, include days in the format
+           formattedRemainingTime = String.Format("{0} {1} {2:D2} hrs {3:D2} minutes {4:D2} seconds",
+                  remainingTime.Days, dayLabel, remainingTime.Hours, remainingTime.Minutes, remainingTime.Seconds)
+       Else
+           ' If there are no remaining days, exclude days from the format
+           formattedRemainingTime = String.Format("{0} days {1:D2} hrs {2:D2} minutes {3:D2} seconds",
+                  remainingTime.Hours, remainingTime.Minutes, remainingTime.Seconds)
+       End If
+   End If

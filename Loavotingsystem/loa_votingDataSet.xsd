@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="loa_votingDataSet" targetNamespace="http://tempuri.org/loa_votingDataSet.xsd" xmlns:mstns="http://tempuri.org/loa_votingDataSet.xsd" xmlns="http://tempuri.org/loa_votingDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="loa_votingConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="loa_votingConnectionString (MySettings)" PropertyReference="ApplicationSettings.Loavotingsystem.My.MySettings.GlobalReference.Default.voters_ConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblVotersTableAdapter" GeneratorDataComponentClassName="tblVotersTableAdapter" Name="tblVoters" UserDataComponentName="tblVotersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="loa_votingConnectionString (MySettings)" DbObjectName="tblVoters" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT VoterID, Studid, Firstname, Lastname, Course, Yearlvl, VotingStatus, SectionStatus FROM tblVoters</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="loa_votingDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="loa_votingDataSet" msprop:Generator_DataSetName="loa_votingDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblVoters" msprop:Generator_RowEvHandlerName="tblVotersRowChangeEventHandler" msprop:Generator_RowDeletedName="tblVotersRowDeleted" msprop:Generator_RowDeletingName="tblVotersRowDeleting" msprop:Generator_RowEvArgName="tblVotersRowChangeEvent" msprop:Generator_TablePropName="tblVoters" msprop:Generator_RowChangedName="tblVotersRowChanged" msprop:Generator_RowChangingName="tblVotersRowChanging" msprop:Generator_TableClassName="tblVotersDataTable" msprop:Generator_RowClassName="tblVotersRow" msprop:Generator_TableVarName="tabletblVoters" msprop:Generator_UserTableName="tblVoters">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

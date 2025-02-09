@@ -1,0 +1,22 @@
+    Private Sub btnadd_Click(sender As Object, e As EventArgs) Handles btnadd.Click
+
+        Dim formodal As New Form
+        Try
+            Dim modal As New AddParty
+            formodal.StartPosition = FormStartPosition.CenterScreen
+            formodal.FormBorderStyle = FormBorderStyle.None
+            formodal.Opacity = 0.5D
+            formodal.BackColor = Color.Black
+            formodal.WindowState = FormWindowState.Maximized
+            formodal.TopMost = True
+            formodal.Location = Location
+            formodal.ShowInTaskbar = False
+            formodal.Show()
+            modal.Owner = formodal
+            AddParty.ShowDialog()
+
+        Catch ex As Exception
+        Finally
+            formodal.Dispose()
+        End Try
+    End Sub

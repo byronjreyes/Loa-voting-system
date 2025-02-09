@@ -1,0 +1,116 @@
+Public Class AddParty
+
+End Class
+
+my combobox
+texttitle
+txtdescription
+CBPresident
+CBViceEPresident
+CBVPfinance
+CBActivities
+CBCOMMARKETING
+CbDocumentation
+
+My position in database
+1PRESIDENT 
+2EXECUTIVE VICE PRESIDENT 
+3VP FINANCE
+4VP ACTIVITIES
+5VP COMMUNICATION AND MARKETING 
+6VP DOCUMENTATION
+
+CBPresident
+CBViceEPresident
+CBVPfinance
+CBActivities
+CBCOMMARKETING
+CbDocumentation
+pictureboxpartylist
+txtpartyname
+txtdescriptionparty
+
+
+texttitle
+txtdescription
+txtpresident
+txtvicepresident
+txtfinance
+txtactivities
+txtdocu
+pictureboxpartyimage
+
+
+
+this is my qryParties
+
+CandidateID autonumber
+Studid
+Firstname
+Lastname
+Position
+PartyID
+ 
+
+
+
+
+
+Can Add Voters
+Can Update Candidate Information
+Can Update Voters Information
+Can Add Party
+Can Register Candidate
+Can Start Election
+Can Update Party Information
+Title
+Description
+PartyImage
+PartyStatus
+
+
+
+LabelPresident
+LabelVicePresident
+LabelFinance
+LabelActivities
+LabelComnMarket
+LabelDocu
+
+
+
+lbltiepresident
+lbltievicepresident
+lbltiefinance
+lbltieactivities
+lbltiecomnmarketing
+lbltiedocu
+
+ButtonPresident
+ButtonEVPresident
+ButtonVFinance
+ButtonVActivities
+ButtonVComMarketing
+ButtonVDocumentation
+
+
+
+
+
+lblforpresident
+radiopresident
+
+lblforvicepresident
+radiovicepresident
+
+lblforfinance
+radiofinance
+
+lblforactivities
+radioactivities
+
+lblforcomnmarketing
+radiocomnmarketing
+
+lblfordocu
+radiodocu
