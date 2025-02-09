@@ -2,52 +2,81 @@
 
 A simple and efficient voting system developed in VB.NET with MS Access database for managing school elections.
 
-## Overview
-
-This voting system is designed to handle school voting events digitally, making the election process easier and more organized. Built using VB.NET and MS Access, it's lightweight and easy to deploy in school environments.
-
 ## Features
 
-- Student voter registration and login
-- Candidate registration
-- Simple voting interface
-- Vote counting and results generation
-- Admin control panel
-- MS Access database for data storage
+### User Authentication
+- Secure login system for students and administrators
+- Password protection for admin access
+- User session management
 
-## Technical Details
+### Voting Management
+- Real-time vote casting and recording
+- One-time voting restriction per student
 
-### Built With
+### Candidate Management
+- Candidate registration and profile management
+- Upload candidate photos
+- Add candidate details and positions
+- Multiple position categories support
+
+### Admin Controls
+- Dashboard for election monitoring
+- Voter list management
+- Reset/Void votes when needed
+- Generate election results
+- Print voting reports and statistics
+
+### Student Voting
+- User-friendly voting interface
+- View candidate information
+- Secure vote submission
+- Vote confirmation receipt
+- View personal voting status
+
+### Reporting System
+- Generate voter turnout reports
+- View vote counts and percentages
+- Export results to PDF/Excel
+- Print voting summaries
+
+## Tech Stack
+
+### Frontend
 - Visual Basic .NET (VB.NET)
-- Microsoft Access Database
-- Windows Forms
+- Windows Forms (WinForms)
+- Crystal Reports for reporting
+- Microsoft Office Interop
 
-### System Requirements
-- Windows OS
-- .NET Framework 4.5 or higher
+### Backend
+- VB.NET Framework 4.5+
+- ADO.NET for database connectivity
+- MS Access Database (.accdb/.mdb)
+
+### Database
+- Microsoft Access
+- Tables:
+  - tblUsers
+  - tblCandidates
+  - tblVotes
+  - tblPositions
+  - tblSettings
+
+### Development Tools
+- Visual Studio
+- Microsoft Access
+- Version Control (Git)
+
+### Additional Components
+- Crystal Reports Viewer
 - Microsoft Access Database Engine
-- Microsoft Office Access (or Access Runtime)
+- Windows OS Compatible Drivers
 
-### Installation
-1. Copy the entire application folder to your computer
-2. Ensure MS Access Database Engine is installed
-3. Connect the Access database file (.mdb or .accdb)
-4. Run the application executable
-
-## Usage
-
-### Admin Features
-- Manage student voters
-- Add/Edit candidates
-- Start/Stop voting period
-- View and generate voting results
-
-### Student Features
-- Login with student credentials
-- View candidate list
-- Cast vote
-- View voting confirmation
-
+## System Requirements
+- Windows 7 or higher
+- .NET Framework 4.5+
+- Microsoft Access Runtime
+- 2GB RAM minimum
+- 500MB free disk space
 
 
 ## Screenshots
